@@ -1,0 +1,28 @@
+class Compute {
+    public String isSubset( long a1[], long a2[], long n, long m) {
+        int c = 0;
+        for(int i=0;i<n;i++)
+        {
+            long num =  a1[i];
+            //System.out.println(a1[i]);
+            for(int j =0;j<m;j++)
+            {
+                if(num == a2[j])
+                {
+                    c += 1;
+                }
+            }
+        }
+        
+        if(c == a2.length)
+        {
+            return "Yes";
+        }
+        else
+        {
+            return "No";
+        }
+        
+        
+    }
+}
