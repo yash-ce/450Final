@@ -1,0 +1,21 @@
+// Iterative
+
+class Solution
+{
+    //Function to reverse a linked list.
+    Node reverseList(Node head)
+    {
+        // code here
+        Node next_ = head;
+        Node pre = null;
+        while(head != null){
+            next_ = head.next;
+            head.next = pre;
+            pre = head;
+            head = next_;
+        }
+        head = pre;
+        return head;
+    }
+}
+
