@@ -1,0 +1,39 @@
+https://practice.geeksforgeeks.org/problems/circular-linked-list/1#
+
+
+/* Structure of LinkedList
+class Node
+{
+	int data;
+	Node next;
+	Node(int d)
+	{
+		data = d;
+		next = null;
+	}
+}
+*/
+class GfG
+{
+    boolean isCircular(Node head)
+    {
+	// Your code here	
+	    Node ptr = head;
+	    Node temp = head;
+	    if(head == null ){
+	        return true;
+	    }
+	    while(ptr.next != null && ptr.next != head) {
+	      
+	        ptr = ptr.next;
+	    }
+	   
+	    if(ptr.next == null){
+	        return false;
+	    }
+	    else{
+	        return true;
+	    }
+	    
+    }
+}
