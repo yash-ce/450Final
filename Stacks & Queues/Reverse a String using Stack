@@ -1,0 +1,28 @@
+https://practice.geeksforgeeks.org/problems/reverse-a-string-using-stack/1#
+
+
+//return the address of the string
+char* reverse(char *S, int len)
+{
+    //code here
+    stack<char> s;
+    for(int i=0;i<len;i++){
+      s.push(S[i]);
+    }
+    // char s1="";
+  for(int j=0;j<len;j++) {
+        S[j] = s.top();
+        s.pop();
+    }
+//     stack<char>s;
+// for(int i=0; i<=len-1; i++)
+// {
+// s.push(str[i]);
+// }
+// for(int i=0; i<=len-1; i++)
+// {
+// str[i]=s.top();
+// s.pop();
+// }   
+    return S;
+}
