@@ -1,0 +1,31 @@
+// Question Link
+https://practice.geeksforgeeks.org/problems/kth-smallest-element5635/1
+
+// ANs solution
+https://ide.geeksforgeeks.org/2ouAqFG3ky
+
+
+/*package whatever //do not write package name here */
+
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+	    int arr[] = new int[11]; 
+	    for(int i=0;i<11;i++){
+	        arr[i] = i;
+	    }
+	    int max = arr[0];
+	    int min = arr[0];
+	    for(int i=0;i<=10;i++){
+	        if(arr[i] > max){
+	            max = arr[i];
+	        }
+	        if(arr[i] < min){
+	            min = arr[i];
+	        }
+	    }
+		System.out.println("max element"+max);
+		System.out.println("min element"+min);
+	}
+}
