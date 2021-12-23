@@ -1,0 +1,17 @@
+//  https://practice.geeksforgeeks.org/problems/union-of-two-arrays3538/1
+
+class Solution{
+    public static int doUnion(int a[], int n, int b[], int m) 
+    {
+        //Your code here
+        HashSet<Integer> res = new HashSet<Integer>();
+        for(int i=0;i<n;i++){
+            res.add(a[i]);
+        }
+        for(int i=0;i<m;i++){
+            res.add(b[i]);
+        }
+        
+        return res.size();
+    }
+}
