@@ -1,5 +1,28 @@
 https://practice.geeksforgeeks.org/problems/cyclically-rotate-an-array-by-one2614/1#
 
+
+// coode here
+        // int res[n];
+        // int c=0;
+        // for(int i=0;i<n;i++){
+        //     if(a[i] == 0){
+        //         res[c++] = 0; 
+        //     }
+        // }
+        // for(int i=0;i<n;i++){
+        //     if(a[i] == 1){
+        //         res[c++] = 1; 
+        //     }
+        // }
+        // for(int i=0;i<n;i++){
+        //     if(a[i] == 2){
+        //         res[c++] = 2; 
+        //     }
+        // }
+        // for(int i=0;i<n;i++){
+        //     a[i] = res[i];
+        // }
+
 class Solution{
 public:
     void sort012(int a[], int n)
